@@ -1,0 +1,49 @@
+
+/*
+Consider an algorithm that takes as input a positive integer n
+. If n
+ is even, the algorithm divides it by two, and if n
+ is odd, the algorithm multiplies it by three and adds one. The algorithm repeats this, until n
+ is one. For example, the sequence for n=3
+ is as follows:
+3?10?5?16?8?4?2?1
+
+Your task is to simulate the execution of the algorithm for a given value of n
+.
+
+Input
+
+The only input line contains an integer n
+.
+
+Output
+
+Print a line that contains all values of n
+ during the algorithm.
+
+Constraints
+1<=n<=10^6
+*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    int n;
+    cin>>n;
+    for(int i=n;i!=1;i)
+    {
+        if(i%2!=0)
+        {
+            i=(i*3)+1;
+        }
+        else
+        {
+            i=i/2;
+        }
+        cout<<i<<endl;
+    }
+    return 0;
+}
